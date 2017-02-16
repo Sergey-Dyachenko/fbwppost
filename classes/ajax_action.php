@@ -16,8 +16,12 @@ function post_facebook_callback() {
       die("2");  
     }
 
-    $postid = $_REQUEST['id'];
-    $post = get_post($postid);
+  $postid = $_REQUEST['id'];
+
+  $post = get_post($postid);
+
+
+
    // $image_post = wp_get_attachment_url( get_post_thumbnail_id($postid) );
     $data = array();
     $domain_url = "https://graph.facebook.com/me/feed";

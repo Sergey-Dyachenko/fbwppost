@@ -1,10 +1,10 @@
 <?php
+
     function fbwppost_admin() {
         global $acessToken;
         $appid = '';
         $appsecret='';
         $fb='';
-
         session_start();
         require_once( "src/Facebook/autoload.php");
         $current_uri = home_url( add_query_arg( NULL, NULL ) );
@@ -317,11 +317,11 @@ border-radius: 6px;
                                     $.post(ajaxurl, data, function(res) {
 
 
-                                        console.log(res);
                                         if(res == "1")
                                         {
                                          $("#error").fadeOut('fast');
                                          $("#loader").addClass("display");
+                                         var successText = "Пост № " +data['id']+ " отправлен в фейсбук ";
                                          $("#suc").text("Пост отправлен в фейсбук").fadeOut("fast").fadeIn();
                                          $("#textarea-access-tocken").removeClass("accessTError");
                                         }else if(res == "2")
