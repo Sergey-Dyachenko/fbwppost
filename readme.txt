@@ -9,6 +9,7 @@ Installing Fbwppost plugin from your WordPress admin panel
 2. Search for Fbwppost and select fbwppost plugin from the list
 3. Click Install Now  button
 4. Then click Activate button
+5. And use plugin!
 
 
 
