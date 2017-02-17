@@ -258,6 +258,7 @@ border-radius: 6px;
 
                                     $query = array(
                                         'posts_per_page' => "-1",
+                                        'post_status' => array('publish'),
                                     );
 
                                     $posts = query_posts($query);
